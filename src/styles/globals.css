@@ -25,3 +25,13 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.container {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) brightness(120%)
+    contrast(90%) grayscale(20%) hue-rotate(20deg) invert(5%) opacity(60%)
+    saturate(140%) sepia(30%);
+  backdrop-filter: var(--tw-backdrop-blur) brightness(150%) contrast(80%)
+    grayscale(10%) hue-rotate(20deg) invert(10%) opacity(60%) saturate(40%)
+    sepia(70%);
+}

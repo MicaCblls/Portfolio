@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      Noah: ["Noah Text", "sans-serif"],
+      Garamond: ["Garamond", "sans-serif"],
     },
     container: {
       padding: {
@@ -28,10 +28,27 @@ module.exports = {
     },
     extend: {
       colors: {
-        lightPink: "#fce7f3",
-        pink: "#f9a8d4",
-        darkPink: "#db2777",
+        lightPink: "#FBCFE8",
+        pink: "#F9A8D4",
+        darkPink: "#BE185D",
         neutral: "#f5f5f5",
+        neutral700: "#404040",
+        darkNeutral: "#171717",
+      },
+      animation: {
+        text: "text 2.5s ease-in-out infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       },
     },
   },
