@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 const ResponsiveNavBar = () => {
   const [hidden, setHidden] = useState(true);
   return (
-    <nav className="md:hidden flex justify-start items-center">
+    <nav className="md:hidden flex justify-start items-center py-4">
       <button aria-label="menu">
         <AiOutlineMenu
           className="text-gray-200 transition-colors duration-75 hover:text-darkPink"
@@ -15,7 +15,7 @@ const ResponsiveNavBar = () => {
       </button>
       <div
         hidden={hidden}
-        className="absolute top-[8vh] z-[1] w-3/4 h-auto py-8 md:flex md:visible md:flex-row text-xl bg-neutral700"
+        className="absolute top-[8vh] z-[1] w-3/4 h-auto py-8 md:flex md:visible md:flex-row text-xl bg-neutral700/90"
       >
         <div className="flex flex-col justify-between items-center w-full">
           <Link href="#about" passHref className="pb-4">
