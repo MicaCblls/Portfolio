@@ -7,6 +7,7 @@ import Contact from "@/components/ContactMe";
 import Header from "@/components/Header";
 import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
+import Navbar from "@/components/Header/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +17,11 @@ export default function Home() {
   useEffect(() => {
     gsap.fromTo(
       titleRef.current,
-      { x: "0%", y: "-25%" },
+      { x: "0%", y: "-40%" },
       {
         duration: 2.5,
         x: "45%",
-        y: "-25%",
+        y: "-40%",
         ease: "power2.out",
         stagger: {
           amount: 0.3,
@@ -39,7 +40,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-darkNeutral flex flex-col w-full h-full font-Garamond">
-        <Header />
+        <Navbar />
         <section className="md:z-10 max-h-fit w-full flex flex-row justify-center items-end py-10 px-2 md:px-20">
           <section
             ref={titleRef}
@@ -64,10 +65,11 @@ export default function Home() {
             </h2>
           </section>
           <Image
-            src="/../public/animatedMeDark1.gif"
+            src="/../public/animatedme.jpg"
             alt="Animated Micaela"
             width={900}
             height={900}
+            quality={100}
             priority
             className="rounded hidden sm:block justify-end"
             style={{
