@@ -15,10 +15,6 @@ const About = () => {
         y: "0%",
         duration: 1,
         ease: "power2.out",
-        scrollTrigger: {
-          trigger: div,
-          start: "bottom 80%",
-        },
       }
     );
   }, []);
