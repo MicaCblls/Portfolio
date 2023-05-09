@@ -21,6 +21,14 @@ const projects = [
     github: "https://github.com/MicaCblls/consultoraenlazar",
     link: "https://consultoraenlazar-git-dev-micacblls.vercel.app/",
   },
+  {
+    name: "Calculator App",
+    description:
+      "This app simplifies basic arithmetic operations. Whether you're a student or a professional, this app is the perfect tool for anyone who needs to do math on the go.",
+    image: "/enlazar.jpg",
+    github: "https://github.com/MicaCblls/consultoraenlazar",
+    link: "https://consultoraenlazar-git-dev-micacblls.vercel.app/",
+  },
 ];
 
 const Projects = () => {
