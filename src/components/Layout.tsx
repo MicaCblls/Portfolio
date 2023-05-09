@@ -3,11 +3,13 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Header from "./Header";
+
 import { ReactNode } from "react";
-import Navbar from "./Header/Navbar";
+
 import { ThemeProvider } from "next-themes";
-/* import Header from "@components/Header"; */
+import Navbar from "./Header";
+import Footer from "./Footer";
+
 
 type LayoutProps = {
   children: ReactNode;
@@ -27,13 +29,14 @@ export default function Layout({ children, title }: LayoutProps) {
       </Head>
       <>
         <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
           <main
-            className="dark:bg-darkNeutral  duration-300 ease-in-out bg-white
-          w-full flex flex-1 flex-wrap justify-center items-center  mx-auto h-auto relative pt-28 font-Garamond"
-          >
+            className=" dark:bg-darkNeutral  duration-300 ease-in-out bg-white
+            w-full flex flex-1 flex-wrap justify-center items-center  mx-auto h-auto relative  font-Garamond"
+            >
+            <Navbar/>
             {children}
             <ToastContainer />
+            <Footer/>
             {/*  {!status ? null : <Footer />} */}
           </main>
         </ThemeProvider>
