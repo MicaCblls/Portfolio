@@ -18,8 +18,8 @@ const projects = [
     description:
       "Volunteer project that consisted in the update and optimization of the website of the human resources consulting firm Enlazar.",
     image: "/enlazar.jpg",
-    github: "https://github.com/MicaCblls/consultoraenlazar",
-    link: "https://consultoraenlazar-git-dev-micacblls.vercel.app/",
+    github: "https://github.com/ConsultoraEnlazar1/EnlazarWeb",
+    link: "https://consultoraenlazar.xyz",
   },
 ];
 
