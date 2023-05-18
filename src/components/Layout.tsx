@@ -6,10 +6,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { ReactNode } from "react";
 
-import { ThemeProvider } from "next-themes";
 import Navbar from "./Header";
 import Footer from "./Footer";
-
 
 type LayoutProps = {
   children: ReactNode;
@@ -28,18 +26,16 @@ export default function Layout({ children, title }: LayoutProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <ThemeProvider enableSystem={true} attribute="class">
-          <main
-            className=" dark:bg-darkNeutral  duration-300 ease-in-out bg-white
+        <main
+          className=" dark:bg-darkNeutral  duration-300 ease-in-out bg-white
             w-full flex flex-1 flex-wrap justify-center items-center  mx-auto h-auto relative  font-Garamond"
-            >
-            <Navbar/>
-            {children}
-            <ToastContainer />
-            <Footer/>
-            {/*  {!status ? null : <Footer />} */}
-          </main>
-        </ThemeProvider>
+        >
+          <Navbar />
+          {children}
+          <ToastContainer />
+          <Footer />
+          {/*  {!status ? null : <Footer />} */}
+        </main>
       </>
     </>
   );
