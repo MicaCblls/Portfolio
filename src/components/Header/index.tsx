@@ -20,12 +20,8 @@ const Navbar = () => {
     e.preventDefault();
 
     if (e.currentTarget.value === "light") {
-      console.log(e.currentTarget.value);
-
       setTheme(e.currentTarget.value);
     } else {
-      console.log(e.currentTarget.value);
-
       setTheme(e.currentTarget.value);
     }
   };
