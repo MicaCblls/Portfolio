@@ -11,17 +11,22 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
+
+  useEffect(() => {
+    setTheme("light");
+  }, []);
+
   const handleTheme = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
     if (e.currentTarget.value === "light") {
       console.log(e.currentTarget.value);
 
-      /* setTheme(e.currentTarget.value); */
+      setTheme(e.currentTarget.value);
     } else {
       console.log(e.currentTarget.value);
 
-      /* setTheme(e.currentTarget.value); */
+      setTheme(e.currentTarget.value);
     }
   };
 
@@ -74,7 +79,7 @@ const Navbar = () => {
               className="bg-slate-100 p-2 rounded-xl"
               value="light"
             >
-              <RiSunLine size={25} color="black" />
+              <RiSunLine key={"sun-icon"} size={25} color="black" />
             </button>
           ) : (
             <button
@@ -82,7 +87,7 @@ const Navbar = () => {
               className="bg-slate-100 p-2 rounded-xl"
               value="dark"
             >
-              <RiMoonFill size={25} />
+              <RiMoonFill key={"moon-icon"} size={25} />
             </button>
           )}
         </div>
