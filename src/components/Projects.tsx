@@ -16,7 +16,7 @@ const projects = [
   {
     name: "Enlazar Consultant",
     description:
-      "Volunteer project that consisted in the update and optimization of the website of the human resources consulting firm Enlazar.",
+      "Together with four volunteers, we developed from scratch a new website for Consultora Enlazar, our goal was to optimize the functionalities, such as sending and storing queries, and managing the content of the site through Sanity CMS, we added the possibility of login and renewed the views of the sections.",
     image: "/enlazar.jpg",
     github: "https://github.com/ConsultoraEnlazar1/EnlazarWeb",
     link: "https://consultoraenlazar.xyz",
