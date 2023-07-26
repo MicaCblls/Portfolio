@@ -78,7 +78,7 @@ const HeroSection = () => {
             that makes life easier and more meaningful.
           </p>
           <Link
-            href="https://drive.google.com/file/d/1WR1bGpL2rcKcHNfkggRj8JNJk12ON57a/view?usp=share_link"
+            href="https://drive.google.com/file/d/1bNlePFNKw5qwmpMTg8hDsnaXMe5VdvRD/view"
             target="_blank"
             className="text-neutral-100 font-semibold px-6 py-3 bg-lightPink rounded shadow hover:bg-pink"
           >
