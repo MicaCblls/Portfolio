@@ -72,7 +72,7 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-pink">
-              Full Dtack Developer{" "}
+              Full Stack Developer{" "}
             </span>
             based in Buenos Aires, Argentina. Working towards creating software
             that makes life easier and more meaningful.
@@ -80,7 +80,7 @@ const HeroSection = () => {
           <Link
             href="https://drive.google.com/file/d/1bNlePFNKw5qwmpMTg8hDsnaXMe5VdvRD/view"
             target="_blank"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-lightPink rounded shadow hover:bg-pink"
+            className="text-neutral700 text-xl font-semibold px-6 py-3 bg-lightPink rounded shadow hover:bg-pink"
           >
             Resume
           </Link>
