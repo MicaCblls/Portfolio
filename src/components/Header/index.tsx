@@ -49,20 +49,20 @@ const Navbar = () => {
             className="text-2xl flex-col items-center justify-center py-6 space-y-10 flex md:space-x-6 md:flex-row md:space-y-0"
             style={{ fontSize: "clamp(1.2rem, 1.1256rem + 0.3967vw, 1.5rem)" }}
           >
-            <Link href="#about">
-              <span className="transition-colors delay-300 bg-gradient-to-r from-lightPink to-darkPink text-transparent bg-clip-text animate-text">
+            <Link onClick={() => setNavbar(false)} href="#about">
+              <span className="transition-colors delay-300 bg-gradient-to-r from-lightPink to-darkPink text-transparent bg-clip-text animate-text text-2xl">
                 About me
               </span>
             </Link>
 
-            <Link href="#projects">
-              <span className="transition-colors delay-300 bg-gradient-to-r from-lightPink to-darkPink text-transparent bg-clip-text animate-text">
+            <Link onClick={() => setNavbar(false)} href="#projects">
+              <span className="transition-colors delay-300 bg-gradient-to-r from-lightPink to-darkPink text-transparent bg-clip-text animate-text text-2xl">
                 Projects
               </span>
             </Link>
 
-            <Link href="#contact">
-              <span className="transition-colors delay-300 bg-gradient-to-r from-lightPink to-darkPink text-transparent bg-clip-text animate-text">
+            <Link onClick={() => setNavbar(false)} href="#contact">
+              <span className="transition-colors delay-300 bg-gradient-to-r from-lightPink to-darkPink text-transparent bg-clip-text animate-text text-2xl">
                 Contact me
               </span>
             </Link>
