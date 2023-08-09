@@ -21,6 +21,14 @@ const projects = [
     github: "https://github.com/ConsultoraEnlazar1/EnlazarWeb",
     link: "https://consultoraenlazar.xyz",
   },
+  {
+    name: "Angular App",
+    description:
+      "Angular project that displays a list of products where users can add them to a shopping cart, fill out a checkout form, and click the Checkout button, which stores the order on a Supabase backend and modifies the stock of the ordered products .",
+    image: "/angularapp.jpg",
+    github: "https://github.com/MicaCblls/angularapp-1",
+    link: "https://angularapp-1.vercel.app",
+  },
 ];
 
 const Projects = () => {
