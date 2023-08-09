@@ -21,6 +21,14 @@ const projects = [
     github: "https://github.com/ConsultoraEnlazar1/EnlazarWeb",
     link: "https://consultoraenlazar.xyz",
   },
+  {
+    name: "Angular App",
+    description:
+      "Angular project that displays a list of products where users can add them to a shopping cart, fill out a checkout form, and click the Checkout button, which stores the order on a Supabase backend and modifies the stock of the ordered products .",
+    image: "/angularapp.jpg",
+    github: "https://github.com/MicaCblls/angularapp-1",
+    link: "https://angularapp-1.vercel.app",
+  },
 ];
 
 const Projects = () => {
@@ -39,7 +47,7 @@ const Projects = () => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12 items-center">
                   <div className=" md:w-1/2">
                     <Link href={project.link} target="_blank">
                       <Image
