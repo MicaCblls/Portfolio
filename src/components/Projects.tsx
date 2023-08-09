@@ -47,7 +47,7 @@ const Projects = () => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12 items-center">
                   <div className=" md:w-1/2">
                     <Link href={project.link} target="_blank">
                       <Image
