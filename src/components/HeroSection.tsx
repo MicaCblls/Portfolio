@@ -54,6 +54,8 @@ const HeroSection = () => {
           <Image
             src="/MicaelaCeballos.jpg"
             alt=""
+            priority={true}
+            quality={100}
             width={325}
             height={325}
             className="rounded-full shadow-2xl"

@@ -29,6 +29,14 @@ const projects = [
     github: "https://github.com/MicaCblls/angularapp-1",
     link: "https://angularapp-1.vercel.app",
   },
+  {
+    name: "Task Tracker App",
+    description:
+      "Task Tracker that includes the Angular ui as well as Supabase for the backend. It displays the created tasks, it has a form that creates a task and stores it in the server.",
+    image: "/todoapp.jpg",
+    github: "https://github.com/MicaCblls/todo-angular-app",
+    link: "https://todo-angular-app-gamma.vercel.app/",
+  },
 ];
 
 const Projects = () => {

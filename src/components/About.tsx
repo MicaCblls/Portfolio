@@ -14,14 +14,14 @@ const skills = [
   { skill: "Sequelize" },
   { skill: "PostgreSQL" },
   { skill: "Git" },
-]
-
+];
 
 const About = () => {
- 
-
   return (
-    <section id="about" className="flex flex-col w-full h-auto justify-start items-center  ease-in-out duration-300 dark:border-b dark:border-stone-600 bg-white dark:bg-darkNeutral px-4 md:px-14">
+    <section
+      id="about"
+      className="flex flex-col w-full h-auto justify-start items-center  ease-in-out duration-300 dark:border-b dark:border-stone-600 bg-white dark:bg-darkNeutral px-4 md:px-14"
+    >
       <div className="my-12 pb-12 pt-12 md:py-32">
         <h2 className="text-center font-bold text-4xl">
           About Me
@@ -29,7 +29,7 @@ const About = () => {
         </h2>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="md:w-1/2 ">
+          <div className="md:w-1/2 text-lg">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               Get to know me!
             </h1>
@@ -37,32 +37,29 @@ const About = () => {
               Hi, my name is Micaela and I am a{" "}
               <span className="font-bold">{"curious"}</span>,
               <span className="font-bold">{" proactive"}</span>, and
-              <span className="font-bold">{" adaptable"}</span> Full Stack Developer
-              based in Buenos Aires, Argentina.
+              <span className="font-bold">{" adaptable"}</span> Full Stack
+              Developer based in Buenos Aires, Argentina.
             </p>
             <br />
             <p>
-              I graduated from Henry Bootcamp in 2022
-              with a certificate in Full Stack Developer and have been working in the
-              field ever since.
+              I graduated from Henry Bootcamp in 2022 with a certificate in Full
+              Stack Developer and have been working in the field ever since.
             </p>
             <br />
             <p>
               I have a wide range of hobbies and passions that keep me busy.
-              From reading, excercising, to studying English,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              From reading, excercising, to studying English, I am always
+              seeking new experiences and love to keep myself engaged and
+              learning new things.
             </p>
             <br />
             <p>
               I believe that you should{" "}
-              <span className="font-bold text-pink">
-                never stop growing
-              </span>{" "}
+              <span className="font-bold text-pink">never stop growing</span>{" "}
               and that&#39;s what I strive to do, I have a passion for
               technology and a desire to always push the limits of what is
               possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 
+              always open to new opportunities.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
@@ -76,7 +73,7 @@ const About = () => {
                   >
                     {item.skill}
                   </p>
-                )
+                );
               })}
             </div>
             <Image
@@ -90,6 +87,6 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
+  );
 };
 export default About;
