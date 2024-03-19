@@ -15,7 +15,7 @@ const Footer = () => {
     >
       <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-200 border-0"></hr>
       <div className="w-full p-4 flex flex-col text-center text-neutral-900 md:flex-row justify-between">
-        <div className="flex flex-row items-center justify-around space-x-2 text-darkNeutral dark:text-white ">
+        <div className="flex flex-row items-center justify-center space-x-2 text-darkNeutral dark:text-white ">
           © 2023 Micaela Ceballos
           <Link href="/" className="hover:underline"></Link>
         </div>
